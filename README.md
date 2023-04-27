@@ -1,5 +1,5 @@
 # pycmd_command
-It is a simple python program to create commands (it has been determined that they can take effect in the Command Prompt of Windows). 
+It is a simple python program to create commands and use it. 
 The operation method is as follows:
 ## 1.Create command (example:-a):
         
@@ -24,13 +24,15 @@ The operation method is as follows:
   ```
    example.delete_command()
    print(example.command_exist()[0])
+  ```
 ### The output is as follows:
 ```
 Traceback (most recent call last):
   File "c:\Users\.py", line 2, in <module>
     print(example.command_exist()[0])
 AttributeError: 'command' object has no attribute 'command_exist'
-##4.Run command
+```
+## 4.Run command
 ```
 example.run_command(yourfunc)
 
